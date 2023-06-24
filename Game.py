@@ -5,5 +5,5 @@ class Game(object):
     if not hasattr(cls, 'instance'):
       cls.instance = super(Game, cls).__new__(cls)
     return cls.instance
-  
+
   status: Enum = Enum('status', ['idle', 'playing', 'pause'])
