@@ -34,7 +34,7 @@ def main() -> None:
                 game.status = game.status.playing
         
         if game.status is game.status.idle: # Play the animation of the player bouncing
-            # Generating a sin wave for to animate the player
+            # Generating a sin wave to animate the player
             ampl: float  = 10 # Wave's amplitude
             freq: float  = 1.5  # Wave's frequency
             player.collider.y = int(ampl * math.sin(2 * math.pi * freq * rl.get_time()))
